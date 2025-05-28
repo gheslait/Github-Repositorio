@@ -3,7 +3,7 @@ const detallesRepo = document.getElementById('detallesRepo');
 const cargando = document.getElementById('cargando');
 const errorDiv = document.getElementById('error');
 const empty = document.getElementById('vacio');
-const refreshButton = document.getElementById('refresh');
+const refrescarBoton = document.getElementById('refrescar');
 
 const languagesUrl = 'https://raw.githubusercontent.com/kamranahmedse/githunt/master/src/components/filters/language-filter/languages.json';
 
@@ -73,7 +73,7 @@ function displayRepo(repo) {
         <a href="${repo.html_url}" target="_blank">Ver en GitHub</a>
         </div>
       `;
-  refreshButton.style.display = 'block';
+  refrescarBoton.style.display = 'block';
 }
 
 function showcargando() {
@@ -106,6 +106,6 @@ function clearMessages() {
 }
 
 lenguajeSeleccion.addEventListener('change', fetchRandomRepo);
-refreshButton.addEventListener('click', fetchRandomRepo);
+refrescarBoton.addEventListener('click', fetchRandomRepo);
 
 loadLanguages();
