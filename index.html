@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio Github Aleatorio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67ba396d48.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>        
+        <h1>Repositorio GitHub</h1>
+      </header>
+      <select id="selector-lenguaje">
+        <option value="">Selecciona el lenguaje</option>
+      </select>
+
+      <div id="detallesRepo" class="repo-detalles">
+        <p>
+          Por favor selecciona un lenguaje
+        </p>
+      </div>
+      <div class="contenedor" id="cargando" style="display:none;">Cargando...</div>
+      <div class="contenedor" id="error" style="display:none;">Algo está mal. Por favor intenta nuevamente.</div>
+      <div class="contenedor" id="vacio" style="display:none;">Repositorio no encontrado.</div>
+      <button id="refresh" style="display:none;">Refrescar</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
